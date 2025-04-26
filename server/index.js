@@ -33,7 +33,7 @@ app.get('/api/market-data', async (req, res) => {
     const response = await axios.get('https://api.example.com/data', {
       headers: {
         'X-RapidAPI-Key': process.env.MARKET_API_KEY,
-        'X-RapidAPI-Host': 'api.example.com'
+        'X-RapidAPI-Host': indian-stock-exchange-api2.p.rapidapi.com
       }
     });
     res.json(response.data);
